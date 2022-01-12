@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900;&family=Merrweather:wght@300&family=Montserrat:wght@100@family=Sacramento&display=swap');
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: inherit; */
+    box-sizing: border-box;
+}
+body{
+    color: #777;
+    font-family: 'Lato',sans-serif;
+    line-height: 1.7s;
+    font-size: 10px;
+}
+
+header{
+    background-color: rgb(40,116,240); 
+    height: 3.2rem;
+    width: 100%;
+    position: sticky;
+}
+
+.nav_container1{
+    display: inline-flex;
+    height: 3.2rem;
+    max-width: 70%;
+    margin:  auto 150px;
+    position: absolute;
+    top: 0px;
+}
+.nav_logo{
+    height: 100%;
+    margin-left: 10px;
+}
+.nav_logo a img{
+    height: 1rem;
+    width: 100%;
+    margin: 8px auto 0 0;
+}
+.nav_logo a {
+    text-decoration: none;
+}
+.nav_logo a:hover{
+    text-decoration: underline;
+}
+.nav_logo a p{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    text-decoration: none;
+    font-size: .7rem;
+    font-weight: 300;
+    font-style: italic;
+    letter-spacing: .4px;
+    margin: 0 0 8px 0;
+}
+
+span.plus{
+    padding: 2px;
+    display: inline;
+    color: rgb(243,222,16);
+}
+
+.pointer {cursor: pointer;}
+
+.nav_logo a p img{
+    height: .6rem;
+    width: .6rem;
+    float: right ;
+    top: 0px;
+/*  padding: 0 0 8px 2px; 
+    display: inline-block; 
+    padding-bottom: 10px; */
+}
+.searchBox_container {
+    border-radius: 3px 3px;
+    background-color: #fff;
+    height: 30px;
+    width: 440px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: right;
+    margin: 9px 100px 9px 10px;
+}
+.search_Box{
+    display: inline-block;
+    border: 0;
+    width: 100%;
+    font-size: 14px;
+    outline: 0 none;
+    height: 30px;
+    padding: 0 16px;
+}
+.searchBox_container .search_btn{
+    height: 30px;
+    width: 30px;
+    border: 0;
+    color: rgb(40,116,240);
+}
+
+.nav_container2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 650px;
+}
+#login{
+    color: rgb(39,118, 239);
+    background-color: #fff;
+    border-radius: 3px;
+    height: 30px;
+    width: 100px;
+    border: 0;
+}
+button p{
+    font-weight: 700;
+    font-size: 15px;
+    width: 100%;
+    padding: 2px 0 2px 0;
+    margin: 2px 0;
+}
+.nav_container2 .dropdown{
+    display: flex;
+flex-direction: row;
+    color: #fff;
+    background-color: rgb(39,118, 239);
+    padding: 5px 30px 5px 30px;
+    font-weight: 500;
+    font-size: 15px;
+}
+.fa-angle-down{
+    margin: 3px;
+}
+
+div.cart a{
+    /* background-color: rgb(39,118, 239); */
+    border: none;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 30px 5px 30px;
+    font-weight: 500;
+    font-size: 15px;
+    outline: 0 none;
+    text-decoration: none;
+}
+.login_menue-1{
+    display: none;
+}
+.nav_container1 .nav_container2 .login_container :hover .login_menue-1{
+
+    display: block;
+    position:absolute;
+}
+
+
+.catogeory{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    /* align-content: center; */
+    align-items: center;
+    flex-direction: right;
+    margin: 0 35px 10px 35px;
+text-decoration: none;
+/* border-bottom: 1px solid #777; */
+}
+.catogeory img{
+    height: 70px;
+    width: 70px;
+    border: 0;
+    margin: 10px 20px 0 ;
+}
+.catogeory a{
+    text-decoration: none;
+}
+.catogeory a p{
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: none;
+    text-align: center;
+    color: rgb(53, 50, 50);
+}
+hr{
+    margin: 5px 0;
+}
+.deals{
+    background-color: #fff;
+    color: rgb(10, 20, 20);
+    display: flex;
+    justify-content: space-between;
+    /* align-content: center; */
+    align-items: center;
+    flex-direction: right;
+    margin: 0 35px 10px 35px;
+text-decoration: none;
+}
+
+.today-deal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px ridge rgba(119, 119, 119, 0.555);
+    margin: 25px 15px 0 0;
+    box-shadow: 1px 1px rgba(88, 85, 85, 0.466) ;
+}
+section .main-deals{
+    box-shadow: 0px 0px 1px rgba(88, 85, 85, 0.466) ;
+    display: inline-block;
+    width: 85%;
+}
+section .Deals-titel{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    border: 0;
+}
+section h2{
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    padding-left: 20px;
+}
+section .view-all{
+    border-radius: 3px;
+    border: 0;
+    background-color: rgb(39,118, 239);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    margin-right: 20px;
+    padding: 10px ;
+    text-transform: uppercase;
+}
+.deal-items{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid #777 */
+    padding: 30px 10px;
+    /* box-shadow: 2px 2px rgba(71, 70, 70, 0.671) ; */
+}
+.deal-items a img{
+    display: inline-block;
+    height: 100px;
+    width: 90px;
+    transition: 410ms;
+}
+.deal-items .item{
+    display: block;
+    text-align: center;
+    padding: 5px;
+    border: 0;overflow: hidden;
+    /* text-align: justify; */
+}
+.deal-items a img:hover{
+    transform: scale(.9);
+}
+.item a{
+    text-transform: none;
+    font-size: 12px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.item a .offer{
+    color: seagreen; 
+    font-size: 12px;
+    font-weight: 300;
+    margin: 2px 1px;  
+}
+section .side-deals a img{
+    display: inline-block;
+    height: 300px;
+    width: 100%;
+}   
