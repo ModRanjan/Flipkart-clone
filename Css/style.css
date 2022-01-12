@@ -24,9 +24,9 @@ header{
 .nav_container1{
     display: inline-flex;
     height: 3.2rem;
-    max-width: 70%;
+    max-width: 950px;
     margin:  auto 150px;
-    position: absolute;
+    position: sticky;
     top: 0px;
 }
 .nav_logo{
@@ -137,7 +137,7 @@ div.cart a{
     /* background-color: rgb(39,118, 239); */
     border: none;
     color: #fff;
-    justify-content: space-between;
+    display: flex;
     align-items: center;
     padding: 5px 30px 5px 30px;
     font-weight: 500;
