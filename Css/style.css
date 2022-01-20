@@ -30,15 +30,16 @@ ul li {
   width: 100%;
 }
 .navcontainer {
-  /* background-color: rgb(8, 8, 8); */
-  width: 1080px;
-  max-width: 1280px;
-  margin-left: 150px;
+  width: 980px;
+  max-width: 1080px;
+  margin-left: 130px;
   height: 100%;
 }
 .container-logo {
   height: 100%;
   flex-direction: column;
+  /* align-self: flex-start */
+  margin-left: -30px;
   width: auto;
 }
 .logo-img img {
@@ -67,30 +68,20 @@ a .explore-plus {
   text-decoration: underline #fff;
 }
 .container-searchBar {
-  /* 
-  background-color: #fff; 
-   border-radius: 3px; 
-   height: 32px; 
-   */
   /* background-color: rgb(8, 8, 8); */
   height: 100%;
-  margin: auto auto auto 14px;
-  max-width: 550px;
+  margin: auto 0 auto 14px;
+  max-width: 490px;
 }
 .search-box {
   background-color: #fff;
-  /* padding: 0 0 0 16px; 
-  border: 0;
-  width: 450px;
-  outline: none;
-  */
   justify-content: start;
   border-radius: 3px;
   height: 36px;
   margin: 8px auto;
 }
 .search {
-  width: 460px;
+  width: 430px;
   outline: none;
   border: 0;
   padding: 0 0 0 16px;
@@ -108,17 +99,18 @@ button .fa {
 }
 .container-login {
   align-items: center;
-  background-color: #fff;
-  border-radius: 3px;
-  height: 30px;
-  color: rgb(40, 116, 240);
-  margin: auto 0 auto 130px;
+  background-color: rgb(40, 116, 240);
+  height: 100%;
+  margin: auto 0 auto 80px;
 }
 .login {
+  border-radius: 2px;
   font-weight: 700;
+  background-color: #fff;
+  color: rgb(40, 116, 240);
   font-size: 14px;
-  padding: 4px 40px;
-  margin: 0;
+  padding: 1px 40px;
+  margin-bottom: 0;
   text-align: center;
 }
 .login-dropbox {
@@ -129,25 +121,26 @@ button .fa {
   color: rgb(17, 17, 17);
   display: inline-block;
   position: absolute;
-  margin-left: -45px;
+  margin-left: -40px;
   top: 40px;
 }
 .container-more {
-  /* background-color: rgb(17, 17, 17); */
+  /* background-color: rgb(40, 116, 240); */
   color: #fff;
   font-weight: 500;
   height: 100%;
-  margin: auto;
-  width: 100px;
+  margin: auto 15px auto;
   position: relative;
+  margin: 0 40px 0 40px;
 }
 .more {
   font-size: 14px;
-  padding: 3px;
+  font-weight: 700;
+  padding: 2px;
 }
 .fa-angle-up {
-  opacity: 0;
   display: none;
+  opacity: 0;
 }
 .container-more:hover .fa-angle-down {
   opacity: 0;
@@ -156,7 +149,7 @@ button .fa {
   display: inline-block;
   position: absolute;
   opacity: 1;
-  right: 25px;
+  right: 0px;
 }
 .container-more .fa {
   color: #fff;
@@ -170,17 +163,19 @@ button .fa {
   color: rgb(17, 17, 17);
   display: inline-block;
   position: absolute;
-  margin-left: -40px;
+  margin-left: -10px;
+  width: 150px;
   top: 40px;
 }
 .container-cart {
   height: 100%;
-  width: auto;
   font-size: 15px;
-  padding: 15px;
+  width: 70px;
+  padding: 14px 0;
 }
 .container-cart a {
   color: #fff;
+  font-weight: 700;
   text-decoration: none;
 }
 .container-cart a:hover {
@@ -214,7 +209,7 @@ button .fa {
 .catogeory-container a p {
   text-decoration: none;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 700;
   color: rgb(53, 50, 50);
 }
 /* .slider{
