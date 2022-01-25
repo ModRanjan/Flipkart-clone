@@ -1,352 +1,474 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
-    <!-- Bootstrap CSS -->
-    <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-    crossorigin="anonymous"
-    />
-    
-    <link rel="stylesheet" href="Css/style.css" />
-    <title>flipkart Clone</title>
-    <script
-      src="https://kit.fontawesome.com/c4dbc6eb74.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <header class="header-container flex">
-      <nav class="navcontainer flex">
-        <div class="container-logo flex">
-          <a class="logo-img" href="http://">
-            <img src="img/flipkart.png" alt="flipkart" />
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="stylesheet1.css">
+  <script src="https://kit.fontawesome.com/c4dbc6eb74.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/x-icon" href="/img/flipkart_icon-.png">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="/Css/style.css">
+  <title>FlipKart Clone</title>
+
+</head>
+
+<body>
+  <nav class="nav nav-pills flex-column flex-sm-row">
+    <div class="container-lg flex">
+      <div class="container-sm navbar-brand flex">
+        <a class="flipkart-brand " href="#">
+          <img src="img/flipkart.png" alt="flipkart.png">
+        </a>
+        <a href="https://" class="explore-plus flex">
+          <span>Explore</span>
+          <span class="plus">Plus</span>
+          <img src="img/plus.png" alt="explore-plus">
+        </a>
+      </div>
+      <form class="d-flex search-container">
+        <input class="form-control-plaintext me-2 search" type="search"
+          placeholder="Search for products, brands and more" aria-label="Search">
+        <span class="fa fa-search pointer"></span>
+      </form>
+      <ul class="list-group list-group-horizontal nav-navigator flex">
+        <li class="list-group-item login-container pointer"><span class="login">Login</span></li>
+        <ul class="login-dropbox flex hide">
+          <li class="login-dropbox-item">
+            <span class="login-new">New customer?</span>
+            <span class="sign-up">Sign Up</span>
+          </li>
+          <li class="login-dropbox-item">My profile</li>
+          <li class="login-dropbox-item">Flipkart Plus Zone</li>
+          <li class="login-dropbox-item">Orders</li>
+          <li class="login-dropbox-item">Wishlist</li>
+          <li class="login-dropbox-item">Reward</li>
+          <li class="login-dropbox-item">Gift Card</li>
+        </ul>
+        <li class="list-group-item more-container pointer flex"><span class="more">More</span> <i
+            class="fa fa-angle-down"></i>
+          <i class="fa fa-angle-up hide"></i>
+        </li>
+        <i class="fas fa-caret-up hide"></i>
+        <ul class="more-dropbox flex hide">
+          <li class="more-dropbox-item">
+            <i class="more-icon fa fa-bell"></i>
+            Notification Preference
+          </li>
+          <li class="more-dropbox-item">
+            <i class="more-icon fa fa-shopping-basket"></i>
+            Seel on Flipkart
+          </li>
+          <li class="more-dropbox-item">
+            <i class="more-icon fa fa-question-circle"></i>
+            24x7 Customer Care
+          </li>
+          <li class="more-dropbox-item">
+            <i class="more-icon fa fa-line-chart"></i>
+            Advertise
+          </li>
+          <li class="more-dropbox-item">
+            <i class="more-icon fa fa-download"></i>
+            Download App
+          </li>
+        </ul>
+        <li class="list-group-item cart-container pointer flex"><i class="fas fa-shopping-cart"></i>
+          <span class="cart">Cart</span>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-sm catogeory-container flex">
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <a href="#">
+          <img src="img/top-offer.png" class="card-img-top" alt="top-offers">
+          <h5 class="card-title">Top Offers</h5>
+        </a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <img src="img/Grocery.png" class="card-img-top" alt="Grocery">
+        <a href="#">
+          <h5 class="card-title">Grocery</h5>
+        </a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <a href="#">
+          <img src="img/Fashion.png" class="card-img-top" alt="Fashion" />
+          <h5 class="card-title">Fashion</h5>
+        </a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <a href="#">
+          <img src="img/Electronics.png" alt="Electronics" class="card-img-top" />
+          <h5 class="card-title">Electronics
+            <i class="fa fa-angle-down"></i>
+          </h5>
+        </a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <a href="#">
+          <img src="img/Home.jpg" alt="Home" class="card-img-top" />
+          <h5 class="card-title">Home
+            <i class="fa fa-angle-down"></i>
+          </h5>
+        </a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <a href="#">
+          <img src="img/Appliances.png" alt="Appliances" class="card-img-top" />
+          <h5 class="card-title">Appliances
+            <i class="fa fa-angle-down"></i>
+          </h5>
+        </a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <a href="#">
+          <img src="img/Travel.png" alt="Travel" class="card-img-top" />
+          <h5 class="card-title">Travel</h5>
+        </a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <a href="#">
+          <img src="img/Beauty-Toy&More.png" alt="Beauty-Toy & More" class="card-img-top" />
+          <h5 class="card-title">Beauty-Toy & More
+            <i class="fa fa-angle-down"></i>
+          </h5>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <section class=" container-lg slider">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/slider-1.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="img/slider-2.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="img/slider-3.png" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <button class="carousel-control-prev light" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next light" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <section class="container deal flex">
+    <div class="main-deals flex">
+      <div class="deal-titel flex">
+        <h2>Mobiles</h2>
+        <button class="view-all">View all</button>
+      </div>
+      <div class="deal-items flex">
+        <div class="item">
+          <a href="#">
+            <img src="img/Remote_Control_Board_games.jpeg" alt="Remote_Control_Board_games" />
+            <h6 class="item-title">Remote Control Games</h6>
+            <p class="offer">Min. 60% Off</p>
+            <p class="description">Hot Wheels, Nerf, Barbie..</p>
           </a>
-          <a href="http://" class="flex"
-            >Explore
-            <span class="plus"> Plus</span>
-            <img class="explore-plus" src="img/plus.png" alt="Explore Plus" />
+        </div>
+        <div class="item">
+          <a href="#">
+            <img src="img/Stylish_sun_glasses.jpg" alt="Stylish_sun_glasses" />
+            <h6 class="item-title">Stylish Sun-glasses</h6>
+            <p class="offer">Min. 60% Off</p>
+            <p class="description">Casual Wear, Party Wear</p>
           </a>
         </div>
-        <div class="container-searchBar">
-          <form action="" class="search-box flex">
-            <input
-              class="search"
-              type="text"
-              placeholder="Serch for products, brands, and more"
-            />
-            <button class="search-btn">
-              <span class="fa fa-search pointer" aria-hidden="true"></span>
-            </button>
-          </form>
+        <div class="item">
+          <a href="#">
+            <img src="img/Computer_Accessories.jpeg" alt="Remote_Control_Board_games" />
+            <h6 class="item-title">Computer Accessories</h6>
+            <p class="offer">From Rs.300</p>
+            <p class="description">Top Mouse & Key-Boards</p>
+          </a>
         </div>
-        <div class="container-login pointer flex">
-          <p class="login">Login</p>
-          <div class="login-dropbox">
-            <span class="fa fa-angle-up"></span>
-            <ul>
-              <li class="dropbox-item flex">
-                <span class="login-new">New customer</span>
-                <span class="sign_up">Sign Up</span>
-              </li>
-              <li class="dropbox-item">My Profile</li>
-              <li class="dropbox-item">Flipkart Plus Zone</li>
-              <li class="dropbox-item">Orders</li>
-              <li class="dropbox-item">Wishlist</li>
-              <li class="dropbox-item">Rewards</li>
-              <li class="dropbox-item">Gift Cards</li>
-            </ul>
-          </div>
+        <div class="item">
+          <a href="#">
+            <img src="img/Best_o_Brandsf.jpeg" alt="Best_o_Brands" />
+            <h6 class="item-title">Best of Brands!</h6>
+            <p class="offer">Min. 50% Off</p>
+            <p class="description">Men's Clothing</p>
+          </a>
         </div>
-        <div class="container-more pointer flex">
-          <span class="more">More</span>
-          <i class="fa fa-angle-down"></i>
-          <i class="fa fa-angle-up"></i>
-          <div class="more-dropbox pointer flex">
-            <ul>
-              <li class="dropbox-item">Notification Preferences</li>
-              <li class="dropbox-item">Sell on Flipkart</li>
-              <li class="dropbox-item">24x7 Customer Care</li>
-              <li class="dropbox-item">Advertise</li>
-              <li class="dropbox-item">Download App</li>
-            </ul>
-          </div>
+        <div class="item">
+          <a href="#">
+            <img src="img/Battries.jpeg" alt="Battries" />
+            <h6 class="item-title">Battries</h6>
+            <p class="offer">Min. 60% Off</p>
+            <p class="description">long lasting battries</p>
+          </a>
         </div>
-        <div class="container-cart">
-          <a href="#"><i class="fas fa-shopping-cart"></i> Cart</a>
+        <div class="item">
+          <a href="#">
+            <img src="img/toy_and_games.jpeg" alt="toy_and_games" />
+            <h6 class="item-title">toyes</h6>
+            <p class="offer">Min. 60% Off</p>
+            <p class="description">Casual Wear, Party Wear</p>
+          </a>
         </div>
-      </nav>
-    </header>
+        <div class="item">
+          <a href="#">
+            <img src="img/Bean-bag.jpeg" alt="Bean-bag" />
+            <h6 class="item-title">Bean Bag</h6>
+            <p class="offer">Min. 60% Off</p>
+            <p class="description">Casual Wear, Party Wear</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="side-deals pointer">
+      <a href="#"><img src="img/side-deal.jpg" alt="side-deal" /></a>
+    </div>
+  </section>
 
-      <section class="header-2">
-        <div class="catogeory-container flex">
-          <div class="item pointer">
-            <a href="#">
-              <img src="img/top-offer.png" alt="Top-Offer" />
-              <p>Top Offers</p>
-            </a>
-          </div>
-          <div class="item pointer">
-            <a href="#">
-              <img src="img/Grocery.png" alt="Grocery" />
-              <p>Grocery</p>
-            </a>
-          </div>
-          <div class="item pointer">
-            <a href="#">
-              <img src="img/mobiles.png" alt="Mobiles" />
-              <p>Mobiles</p>
-            </a>
-          </div>
-          <div class="item pointer">
-            <a href="#">
-              <img src="img/Fashion.png" alt="Fashion" />
-              <p>Fashion <i class="fa fa-angle-down"></i></p>
-            </a>
-          </div>
-          <div class="item pointer">
-            <a href="#">
-              <img src="img/Electronics.png" alt="Electronics" />
-              <p>Electronics <i class="fa fa-angle-down"></i></p>
-            </a>
-          </div>
-          <div class="item pointer">
-            <a href="#">
-              <img src="img/Home.jpg" alt="Home" />
-              <p>Home <i class="fa fa-angle-down"></i></p>
-            </a>
-          </div>
-          <div class="item pointer">
-            <a href="#">
-              <img src="img/Appliances.png" alt="tAppliances" />
-              <p>Appliances <i class="fa fa-angle-down"></i></p>
-            </a>
-          </div>
-          <div class="item pointer">
-            <a href="#">
-              <img src="img/Travel.png" alt="Travel" />
-              <p>Travel</p>
-            </a>
-          </div>
-          <div class="item pointer">
-            <a href="#">
-              <img src="img/Beauty-Toy&More.png" alt="Beauty-Toy & More" />
-              <p>Beauty-Toy & More <i class="fa fa-angle-down"></i></p>
-            </a>
-          </div>
+  <section class=" container deal">
+    <div class="main-deals flex">
+      <div class="deal-titel flex">
+        <h2>Bluetooth & Speakers</h2>
+        <button class="view-all">View all</button>
+      </div>
+      <div class="deal-items flex">
+        <div class="item">
+          <a href="#">
+            <img src="img/Remote_Control_Board_games.jpeg" alt="Remote_Control_Board_games" />
+            <h6 class="item-title">Remote Control Games</h6>
+            <p class="offer">Min. 60% Off</p>
+            <p class="description">Hot Wheels, Nerf, Barbie..</p>
+          </a>
         </div>
-      </section>
-      <section class="slider">
-        <div
-          id="carouselExampleControls"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="img/slider-1.jpg" class="d-block w-100" alt="..." />
-            </div>
-            <div class="carousel-item">
-              <img src="img/slider-2.jpg" class="d-block w-100" alt="..." />
-            </div>
-            <div class="carousel-item">
-              <img src="img/slider-3.png" class="d-block w-100" alt="..." />
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev light"
-            type="button"
-            data-bs-target="#carouselExampleControls"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next light"
-            type="button"
-            data-bs-target="#carouselExampleControls"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+        <div class="item">
+          <a href="#">
+            <img src="img/Stylish_sun_glasses.jpg" alt="Stylish_sun_glasses" />
+            <h6 class="item-title">Stylish Sun-glasses</h6>
+            <p class="offer">Min. 60% Off</p>
+            <p class="description">Casual Wear, Party Wear</p>
+          </a>
         </div>
-      </section>
-      <section class="deal flex">
-        <div class="main-deals flex">
-          <div class="deal-titel flex">
-            <h2>Mobiles</h2>
-            <button class="view-all">View all</button>
-          </div>
-          <div class="deal-items flex">
-            <div class="item">
-              <a href="#">
-                <img
-                  src="img/Remote_Control_Board_games.jpeg"
-                  alt="Remote_Control_Board_games"
-                />
-                <h6 class="item-title">Remote Control Games</h6>
-                <p class="offer">Min. 60% Off</p>
-                <p class="description">Hot Wheels, Nerf, Barbie..</p>
-              </a>
-            </div>
-            <div class="item">
-              <a href="#">
-                <img
-                  src="img/Stylish_sun_glasses.jpg"
-                  alt="Stylish_sun_glasses"
-                />
-                <h6 class="item-title">Stylish Sun-glasses</h6>
-                <p class="offer">Min. 60% Off</p>
-                <p class="description">Casual Wear, Party Wear</p>
-              </a>
-            </div>
-            <div class="item">
-              <a href="#">
-                <img
-                  src="img/Computer_Accessories.jpeg"
-                  alt="Remote_Control_Board_games"
-                />
-                <h6 class="item-title">Computer Accessories</h6>
-                <p class="offer">From Rs.300</p>
-                <p class="description">Top Mouse & Key-Boards</p>
-              </a>
-            </div>
-            <div class="item">
-              <a href="#">
-                <img src="img/Best_o_Brandsf.jpeg" alt="Best_o_Brands" />
-                <h6 class="item-title">Best of Brands!</h6>
-                <p class="offer">Min. 50% Off</p>
-                <p class="description">Men's Clothing</p>
-              </a>
-            </div>
-            <div class="item">
-              <a href="#">
-                <img src="img/Battries.jpeg" alt="Battries" />
-                <h6 class="item-title">Battries</h6>
-                <p class="offer">Min. 60% Off</p>
-                <p class="description">long lasting battries</p>
-              </a>
-            </div>
-            <div class="item">
-              <a href="#">
-                <img src="img/toy_and_games.jpeg" alt="toy_and_games" />
-                <h6 class="item-title">toyes</h6>
-                <p class="offer">Min. 60% Off</p>
-                <p class="description">Casual Wear, Party Wear</p>
-              </a>
-            </div>
-            <div class="item">
-              <a href="#">
-                <img src="img/Bean-bag.jpeg" alt="Bean-bag" />
-                <h6 class="item-title">Bean Bag</h6>
-                <p class="offer">Min. 60% Off</p>
-                <p class="description">Casual Wear, Party Wear</p>
-              </a>
-            </div>
-          </div>
+        <div class="item">
+          <a href="#">
+            <img src="img/Computer_Accessories.jpeg" alt="Remote_Control_Board_games" />
+            <h6 class="item-title">Computer Accessories</h6>
+            <p class="offer">From Rs.300</p>
+            <p class="description">Top Mouse & Key-Boards</p>
+          </a>
         </div>
-        <div class="side-deals pointer">
-          <a href="#"><img src="img/side-deal.jpg" alt="side-deal" /></a>
+        <div class="item">
+          <a href="#">
+            <img src="img/Best_o_Brandsf.jpeg" alt="Best_o_Brands" />
+            <h6 class="item-title">Best of Brands!</h6>
+            <p class="offer">Min. 50% Off</p>
+            <p class="description">Men's Clothing</p>
+          </a>
         </div>
-      </section>
-      <section class="deal">
-        <div class="main-deals flex">
-          <div class="deal-titel flex">
-            <h2>Mobiles</h2>
-            <button class="view-all">View all</button>
-          </div>
-          <div class="deal-items flex">
-            <div class="item">
-              <a href="#">
-                <img
-                  src="img/Remote_Control_Board_games.jpeg"
-                  alt="Remote_Control_Board_games"
-                />
-                <h6 class="item-title">Remote Control Games</h6>
-                <p class="offer">Min. 60% Off</p>
-                <p class="description">Hot Wheels, Nerf, Barbie..</p>
-              </a>
-            </div>
-            <div class="item">
-              <a href="#">
-                <img
-                  src="img/Stylish_sun_glasses.jpg"
-                  alt="Stylish_sun_glasses"
-                />
-                <h6 class="item-title">Stylish Sun-glasses</h6>
-                <p class="offer">Min. 60% Off</p>
-                <p class="description">Casual Wear, Party Wear</p>
-              </a>
-            </div>
-            <div class="item">
-              <a href="#">
-                <img
-                  src="img/Computer_Accessories.jpeg"
-                  alt="Remote_Control_Board_games"
-                />
-                <h6 class="item-title">Computer Accessories</h6>
-                <p class="offer">From Rs.300</p>
-                <p class="description">Top Mouse & Key-Boards</p>
-              </a>
-            </div>
-            <div class="item">
-              <a href="#">
-                <img src="img/Best_o_Brandsf.jpeg" alt="Best_o_Brands" />
-                <h6 class="item-title">Best of Brands!</h6>
-                <p class="offer">Min. 50% Off</p>
-                <p class="description">Men's Clothing</p>
-              </a>
-            </div>
-            <div class="item">
-              <a href="#">
-                <img src="img/Battries.jpeg" alt="Battries" />
-                <h6 class="item-title">Battries</h6>
-                <p class="offer">Min. 60% Off</p>
-                <p class="description">long lasting battries</p>
-              </a>
-            </div>
-            <div class="item">
-              <a href="#">
-                <img src="img/toy_and_games.jpeg" alt="toy_and_games" />
-                <h6 class="item-title">toyes</h6>
-                <p class="offer">Min. 60% Off</p>
-                <p class="description">Casual Wear, Party Wear</p>
-              </a>
-            </div>
-            <div class="item">
-              <a href="#">
-                <img src="img/Bean-bag.jpeg" alt="Bean-bag" />
-                <h6 class="item-title">Bean Bag</h6>
-                <p class="offer">Min. 60% Off</p>
-                <p class="description">Casual Wear, Party Wear</p>
-              </a>
-            </div>
-          </div>
+        <div class="item">
+          <a href="#">
+            <img src="img/Battries.jpeg" alt="Battries" />
+            <h6 class="item-title">Battries</h6>
+            <p class="offer">Min. 60% Off</p>
+            <p class="description">long lasting battries</p>
+          </a>
         </div>
-      </section>
-  
-    <footer class="footer-container"></footer>
-    <!-- Optional JavaScript; choose one of the two! -->
+        <div class="item">
+          <a href="#">
+            <img src="img/toy_and_games.jpeg" alt="toy_and_games" />
+            <h6 class="item-title">toyes</h6>
+            <p class="offer">Min. 60% Off</p>
+            <p class="description">Casual Wear, Party Wear</p>
+          </a>
+        </div>
+        <div class="item">
+          <a href="#">
+            <img src="img/jbl-flip-essential-original-img.jpeg" alt="jbl-flip-essential-original" />
+            <p><i class="fa fa-angle-down"></i></p>
+            <h6 class="item-title">jbl-flip</h6>
+            <p class="offer">Min. 60% Off</p>
+            <p class="description">Aamet consectetur </p>
+          </a>
+        </div>
+        <div class="item">
+          <a href="#">
+            <img src="img/rockerz-450-boat-original-imag6cqqh49wjfy5.jpeg" alt="rockerz-450-boat-original" />
+            <h6 class="item-title">Head Phones</h6>
+            <p class="offer">Min. 60% Off</p>
+            <p class="description">Lorem ipsum dolor</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
+  <footer>
+    <div class="container footer-container">
+      <div class="row">
+        <div class="col-sm-7">
+          <div class="row">
+            <div class="col-sm-3 footer-main">
+              <ul class="list-group footer-item">
+                <h3 class="title">about</h3>
+                <li class="list-group-item">
+                  <a href="http://">Payments</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="http://">Shipping</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="http://">Cancellation & Raturns</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="http://">FAQ</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="http://">Report Infirgenment</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-3">
+              <ul class="list-group footer-item">
+                <h3 class="title">help</h3>
+                <li class="list-group-item">
+                  <a href="http://">Contact Us</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="http://">About Us</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="http://">Careers</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="http://">Flipkart Stories</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="http://">Flipkart Wholesale</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="http://">Corporate Information</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-3">
+              <ul class="list-group footer-item">
+                <h3 class="title">help</h3>
+                <li class="list-group-item">
+                  <a href="http://">Payments</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="http://">Shipping</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="http://">Cancellation & Raturns</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="http://">FAQ</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="http://">Report Infirgenment</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-3">
+              <ul class="list-group footer-item">
+                <h3 class="title">social</h3>
+                <li class="list-group-item">
+                  <a href="http://">Facebook</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="http://">Twitter</a>
+                </li>
+                <li class="list-group-item">
+                  <a href="http://">YouTube</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-5 footer-side">
+          <div class="row">
+            <div class="col-sm-6 ">
+              <ul class="list-group footer-item">
+                <h3 class="title">Mail Us:</h3>
+                <p class="description">
+                  Flipkart Internet Private Limited,<br>
+                  Buildings Alyssa, Begonia &<br>
+                  Clove Embassy Tech Village,<br>
+                  Outer Ring Road, Devarabeesanahalli Village,<br>
+                  Bengaluru, 560103,<br>
+                  Karnataka, India</p>
+              </ul>
+            </div>
+            <div class="col-sm-6">
+              <ul class="list-group footer-item">
+                <h3 class="title">Registered Office Address:</h3>
+                <p class="description">Flipkart Internet Private Limited,<br>
+                  Buildings Alyssa, Begonia &<br>
+                  Clove Embassy Tech Village,<br>
+                  Outer Ring Road, Devarabeesanahalli Village,<br>
+                  Karnataka, India<br>
+                  CIN : U51109KA2012PTC066107<br>
+                </p>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row additional-features">
+        <div class="col-sm feature">
+          <a href="http://">Sell On Flipkart</a>
+        </div>
+        <div class="col-sm feature">
+          <a href="http://">Advertise</a>
+        </div>
+        <div class="col-sm feature">
+          <a href="http://">Gift Cards</a>
+        </div>
+        <div class="col-sm feature">
+          <a href="http://">Help Center</a>
+        </div>
+        <div class="col-sm feature pointer"><img src="img/payment-method.svg" alt=""></div>
+      </div>
+    </div>
+  </footer>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    -->
-  </body>
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
