@@ -96,7 +96,7 @@ body {
   font-size: 1.6rem;
   font-weight: 700;
   height: 100%;
-  margin-left: 4rem;
+  margin-left: 2rem;
   width: 40.0rem;
   justify-content: space-around;
 }
@@ -104,12 +104,13 @@ body {
   background-color: rgb(255, 255, 255);
   border-radius: 0.1rem;
   height: 30px;
-  padding: 0 2rem 0;
+  padding: 0;
   text-align: center;
   width: auto;
   /* flex-direction: column; */
 }
 .login {
+  padding: 0 0rem 0;
   color: rgb(39, 118, 239);
   text-align: center;
   width: fit-content;
@@ -159,8 +160,10 @@ ul .more-container:hover .more-dropbox {
 .more {
   display: inline-block;
   color: #fff;
-  /* font-size: 1.6rem;
-  font-weight: 700; */
+  /* 
+  font-size: 1.6rem;
+  font-weight: 700; 
+  */
   margin-right: 0.9rem;
 }
 .fa-angle-down,
@@ -192,6 +195,8 @@ ul .more-container:hover .more-dropbox {
 }
 .catogeory-container .card{
   border: 0;
+  display: inline-block;
+  width: 100px;
 }
 .card-body a:link {
   text-decoration: none;
@@ -272,12 +277,15 @@ section .view-all {
   display: inline-block;
   height: 200px;
   width: 150px;
+  align-self: center;
   border-radius: 0;
 }
 
 .item a .item-title,
 .item a .description{
   text-transform: none;
+  text-align: center;
+
     font-size: 1.6rem;
     font-weight: 500;
     margin: 0 0;
@@ -310,6 +318,7 @@ section .side-deals a img {
   align-items: center;
   padding: 10px 0 10px 0;
   border-top: 1px solid #fff;
+  background-color: rgb(23,35,55);
 }
 .feature a:link{
   color: #fff;
@@ -322,6 +331,7 @@ section .side-deals a img {
   padding: 4rem 4rem 0 4rem;
   font-size: 1.2rem;
   color: #fff;
+  height: fit-content;
 }
 .footer-main{
   margin-bottom: 60px;
@@ -349,4 +359,18 @@ section .side-deals a img {
 }
 .list-group .description{
   color: #fff;
+}
+
+.d-items{
+  overflow-x: scroll;
+  width: 100%;
+
+}
+.side-deal a img{
+  display: block;
+  height: 320px;
+  width: auto;
+  border: 2px ridge rgb(203, 204, 207);
+  box-shadow: 1px 2px 20px rgba(203, 204, 207, 0.651);
+
 }
