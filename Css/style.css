@@ -97,7 +97,7 @@ body {
   font-weight: 700;
   height: 100%;
   margin-left: 2rem;
-  width: 40.0rem;
+  width: 40rem;
   justify-content: space-around;
 }
 .login-container {
@@ -169,12 +169,12 @@ ul .more-container:hover .more-dropbox {
 .fa-angle-down,
 .fa-angle-up,
 .fa-caret-up,
-.fa-shopping-cart{
+.fa-shopping-cart {
   color: #fff;
 }
 .more-container:hover .fa-angle-down {
   display: none;
-} 
+}
 .more-container:hover .fa-angle-up {
   display: inline;
   opacity: 1;
@@ -184,16 +184,16 @@ ul .more-container:hover .more-dropbox {
   border: 0;
   background-color: rgb(39, 118, 239);
 }
-.cart{
+.cart {
   color: #ffffff;
   margin-left: 0.9rem;
 }
 .catogeory-container {
   overflow-x: auto;
   border: 0;
-  padding-left: .5rem o;
+  padding-left: 0.5rem o;
 }
-.catogeory-container .card{
+.catogeory-container .card {
   border: 0;
   display: inline-block;
   width: 100px;
@@ -202,16 +202,16 @@ ul .more-container:hover .more-dropbox {
   text-decoration: none;
   text-align: center;
 }
-.card-body .card-title{
+.card-body .card-title {
   color: rgba(0, 0, 0, 0.867);
   font-size: 2rem;
   font-weight: 700;
 }
 .card-body:hover .card-title,
-.card-body:hover .card-body a .fa{
+.card-body:hover .card-body a .fa {
   color: rgb(39, 118, 239);
 }
-.card-body a .fa{
+.card-body a .fa {
   color: rgba(0, 0, 0, 0.867);
 }
 
@@ -247,12 +247,12 @@ ul .more-container:hover .more-dropbox {
 }
 section .view-all {
   border-radius: 3px;
-    border: 0;
-    background-color: rgb(39, 118, 239);
-    color: #fff;
-    padding: 4px;
-    margin: 5px 43px 5px auto;
-    text-transform: uppercase;
+  border: 0;
+  background-color: rgb(39, 118, 239);
+  color: #fff;
+  padding: 4px;
+  margin: 5px 43px 5px auto;
+  text-transform: uppercase;
 }
 .deal-items {
   display: inline-flex;
@@ -268,7 +268,7 @@ section .view-all {
   overflow: hidden;
   text-align: center;
 }
-.item a:link{
+.item a:link {
   color: rgb(0, 0, 0);
   transform: scale(2);
   text-decoration: none;
@@ -282,14 +282,13 @@ section .view-all {
 }
 
 .item a .item-title,
-.item a .description{
+.item a .description {
   text-transform: none;
   text-align: center;
-
-    font-size: 1.6rem;
-    font-weight: 500;
-    margin: 0 0;
-    color: rgb(0, 0, 0);
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin: 0 0;
+  color: rgb(0, 0, 0);
 }
 
 .item a .offer {
@@ -298,10 +297,9 @@ section .view-all {
   margin: 3px 0;
   font-size: 1.4rem;
   font-weight: 700;
-  
 }
-section .side-deals ,
-.side-deals{
+section .side-deals,
+.side-deals {
   width: 21%;
   height: 100%;
   border: -20px 2px 20px rgba(203, 204, 207, 0.651);
@@ -312,65 +310,62 @@ section .side-deals a img {
   width: 100%;
   border: 2px ridge rgb(203, 204, 207);
   box-shadow: 1px 2px 20px rgba(203, 204, 207, 0.651);
-} 
+}
 .additional-features {
   height: 70px;
   align-items: center;
   padding: 10px 0 10px 0;
   border-top: 1px solid #fff;
-  background-color: rgb(23,35,55);
+  background-color: rgb(23, 35, 55);
 }
-.feature a:link{
+.feature a:link {
   color: #fff;
   font-size: 1.6rem;
   text-decoration: none;
   font-weight: 500;
 }
-.footer-container{
-  background-color: rgb(23,35,55);
+.footer-container {
+  background-color: rgb(23, 35, 55);
   padding: 4rem 4rem 0 4rem;
   font-size: 1.2rem;
   color: #fff;
   height: fit-content;
 }
-.footer-main{
+.footer-main {
   margin-bottom: 60px;
 }
-.footer-side{
+.footer-side {
   border-left: 1px solid rgba(203, 204, 207, 0.651);
   margin-bottom: 30px;
   padding-left: 20px;
 }
-.footer-item li{
-  background-color: rgb(23,35,55);
+.footer-item li {
+  background-color: rgb(23, 35, 55);
   border: 0;
 }
-.list-group h3.title{
+.list-group h3.title {
   font-size: 1.4rem;
   color: rgb(70, 69, 69);
   text-transform: uppercase;
 }
-.list-group a:link{
+.list-group a:link {
   color: #fff;
   text-decoration: none;
 }
-.list-group-item a:link:hover{
+.list-group-item a:link:hover {
   text-decoration: underline;
 }
-.list-group .description{
+.list-group .description {
   color: #fff;
 }
-
-.d-items{
+.d-items {
   overflow-x: scroll;
   width: 100%;
-
 }
-.side-deal a img{
+.side-deal a img {
   display: block;
   height: 320px;
   width: auto;
   border: 2px ridge rgb(203, 204, 207);
   box-shadow: 1px 2px 20px rgba(203, 204, 207, 0.651);
-
 }
